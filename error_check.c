@@ -6,17 +6,11 @@
 /*   By: eismail <eismail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/01 11:36:52 by eismail           #+#    #+#             */
-/*   Updated: 2024/04/03 17:11:18 by eismail          ###   ########.fr       */
+/*   Updated: 2024/04/05 16:04:51 by eismail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-long	print_error(void)
-{
-	write(2, "Error\n", 6);
-	return (2147483648);
-}
 
 int	num_check(char *str)
 {
