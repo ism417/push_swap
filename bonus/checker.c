@@ -70,7 +70,7 @@ void	ft_read(t_node **a, t_node **b)
 	}
 	while (1)
 	{
-		moves = get_next_line(1);
+		moves = get_next_line(0);
 		if (moves == NULL)
 			break ;
 		if (moves[0] == '\n')
