@@ -6,7 +6,7 @@
 /*   By: eismail <eismail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 16:03:51 by eismail           #+#    #+#             */
-/*   Updated: 2024/04/03 22:38:44 by eismail          ###   ########.fr       */
+/*   Updated: 2024/04/04 22:17:37 by eismail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ long	ft_atoi(const char *str)
 	res = 0;
 	while ((str[i] == ' ') || ((str[i] >= 9) && (str[i] <= 13)))
 		i++;
-	if (str[i] == '-' || str[i] == '+')
+	if ((str[i] == '-' || str[i] == '+') && str[i + 1] != '\n' 
+		&& ft_isdigit(str[i + 1]))
 	{
 		if (str[i] == '-')
 			neg_flg *= -1;
@@ -35,7 +36,7 @@ long	ft_atoi(const char *str)
 		if ((str[i] >= '0') && (str[i] <= '9'))
 			res = (res * 10) + (str[i++] - '0');
 		else
-			return (print_error());
+			return (2147483648);
 	}
 	return (res * neg_flg);
 }

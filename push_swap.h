@@ -6,7 +6,7 @@
 /*   By: eismail <eismail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/27 12:07:59 by eismail           #+#    #+#             */
-/*   Updated: 2024/04/04 11:53:56 by eismail          ###   ########.fr       */
+/*   Updated: 2024/04/04 22:02:31 by eismail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ int		check_sort(t_node *stack);
 void	ft_two(t_node **a);
 void	ft_four(t_node **a, t_node **b);
 void	free_split(char **split_str);
-long	print_error(void);
 int		check_sort(t_node *stack);
 int		dep_check(t_node *stack);
 int		ft_optimize(t_node *lst, int start, int end);
