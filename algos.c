@@ -6,7 +6,7 @@
 /*   By: eismail <eismail@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 22:15:14 by eismail           #+#    #+#             */
-/*   Updated: 2024/04/01 13:12:50 by eismail          ###   ########.fr       */
+/*   Updated: 2024/04/04 12:43:18 by eismail          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,13 +113,10 @@ void	else_sort(t_node **a, t_node **b, int rang)
 			rb(b);
 			start++;
 		}
+		else if ((ft_last(*a))->nbr == find_min(*a))
+			rra(a);
 		else
-		{
-			if (ft_optimize(*a, start, (start + rang)) == 1)
-				ra(a);
-			else if (ft_optimize(*a, start, (start + rang)) == 0)
-				rra(a);
-		}
+			ra(a);
 	}
 	push_back(a, b);
 }
